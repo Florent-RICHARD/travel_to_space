@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import "./header.css";
 
 body{
     margin: 0;
@@ -79,6 +78,7 @@ body{
 }
 
 .heading-5{
+    text-transform: uppercase;
     font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
