@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+header{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 96%;
+    height: 96px;
+    left: 3.82%;
+    top: 40px;
+}
+
+.container .line{
+    position: absolute;
+    width: 34.215%;
+    height: 1px;
+    left: 112px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+
+.container .container-logo{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 55px;
+    top: 64px;
+    z-index: 1;
+}
+
+.container .container-menu{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    width: 60.04%;
+    /*((((830px * 100) / 100%) / 100) * 100%)*/
+    height: 96px;
+    left: 40.15%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+.container .menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    width: 85%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 14.82%;
+    right: 19.88%;
+    list-style-type: none;
+}
+
+.container .menu li{
+    text-transform: uppercase;
+    line-height: 19px;
+    font-weight: 700;
+    letter-spacing: 2.7px;
+}
+
+.container .menu a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1070px) {
+    .container .menu{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:955px) {
+    .container .menu{
+        gap: 20px;
+    }
+}
