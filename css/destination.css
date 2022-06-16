@@ -1,0 +1,157 @@
+@import "./header.css";
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container .title{
+    position: absolute;
+    height: 34px;
+    left: 11.56%;
+    top: 23.56%;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.background img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container .img-moon{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 15.97%;
+    top: 38.11%;
+}
+
+.container .container-infos{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 30.90%;
+    /*height: 52.44%;*/
+    top: 34.44%;
+    left: 57.78%;
+}
+.container .container-infos .text-infos{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+
+.heading-2{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 115px;
+    color: #FFFFFF;
+}
+
+.container-infos .select-planet ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 35px;
+}
+
+.container-infos .select-planet li{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
+
+.container-infos .select-planet a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-infos .info-line{
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.container-infos .info-number{
+    width: 100%;
+}
+
+.subheading-1{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subheading-2{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+
+.info-number{
+    display: flex;
+    gap: 79px;
+}
+
+.info-number .distance{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-number .travel-time{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media screen and (max-height:700px) {
+    .container .container-infos{
+        top: 25.44%;
+    }
+}
+
+@media screen and (max-height:750px) {
+    .container .img-moon img{
+        width: 300px;
+    }
+}
+
+
