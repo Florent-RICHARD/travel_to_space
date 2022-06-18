@@ -49,7 +49,7 @@ body{
     flex-direction: column;
     width: 30.90%;
     /*height: 52.44%;*/
-    top: 34.44%;
+    top: 41.44%;
     left: 57.78%;
 }
 .container .container-infos .text-infos{
@@ -68,16 +68,25 @@ body{
     font-size: 100px;
     line-height: 115px;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
-.container-infos .select-planet ul{
+.select-planet{
+    position: absolute;
+    width: 285px;
+    height: 34px;
+    top: 34.444%;
+    left: 57.82%;
+}
+
+.select-planet ul{
     display: flex;
     list-style-type: none;
     padding: 0;
     gap: 35px;
 }
 
-.container-infos .select-planet li{
+.select-planet li{
     font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
@@ -85,12 +94,13 @@ body{
     line-height: 19px;
     letter-spacing: 2.7px;
     color: #D0D6F9;
+    cursor: pointer;
 }
 
-.container-infos .select-planet a{
+/*.container-infos .select-planet a{
     text-decoration: none;
     color: white;
-}
+}*/
 
 .container-infos .info-line{
     width: 100%;
@@ -144,7 +154,11 @@ body{
 
 @media screen and (max-height:700px) {
     .container .container-infos{
-        top: 25.44%;
+        top: 36.44%;
+    }
+
+    .select-planet{
+        top: 25.444%;
     }
 }
 

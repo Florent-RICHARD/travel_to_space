@@ -35,42 +35,6 @@ body{
     z-index: -1;
 }
 
-.container .img-commander{
-    display: flex;
-    justify-content: end;
-    position: absolute;
-    width: 39.44%;
-    height: 79.11%;
-    left: 50.90%;
-    top: 20.78%;
-}
-
-.container .img-commander img{
-    height: 100%;
-    width: 92.08%;
-}
-
-
-.container-infos{
-    position: absolute;
-    left: 11.46%;
-    top: 44.44%;
-    width: 41.89%;
-    height: auto;
-}
-
-.heading-4{
-    font-family: 'Bellefair';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-
 .heading-3{
     font-family: 'Bellefair';
     font-style: normal;
@@ -79,6 +43,25 @@ body{
     line-height: 64px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-top: 11px;
+}
+
+.heading-6{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
+
+.container-infos{
+    position: absolute;
+    left: 22.57%;
+    top: 42.555%;
+    width: 41.89%;
+    height: auto;
 }
 
 .container .container-infos .text-infos{
@@ -89,26 +72,61 @@ body{
     line-height: 32px;
     color: #D0D6F9;
     width: 73.63%;
+    margin: 0;
+    margin-top: 18px;
 }
 
 .container-bouton{
-    position: absolute;
     display: flex;
-    left: 11.58%;
-    top: 87.89%;
+    flex-direction: column;
+    gap: 32px;
+    color: white;
+    position: absolute;
+    top: 42.44%;
+    left: 11.56%;
 }
 
 .bouton{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15px;
-    height: 15px;
+    width: 80px;
+    height: 80px;
     border: 2px solid white;
     border-radius: 50%;
     cursor: pointer;
 }
 
+.bouton span{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
 .container-bouton .active{
     background-color: white;
+}
+
+.container-bouton .active span{
+    color: black;
+}
+
+.container .img-vehicle{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    width: 35.76%;
+    height: 58.555%;
+    right: 0;
+    top: 30.22%;
+}
+
+.container .img-vehicle img{
+    height: 100%;
+    width: 100%;
 }
