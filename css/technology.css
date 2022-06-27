@@ -130,3 +130,115 @@ body{
     height: 100%;
     width: 100%;
 }
+
+@media screen and (max-height:1024px) and (max-width:768px) {
+    .container .title{
+        left: 5.04%;
+        top: 13.28%;
+    }
+
+    .container .title .subheading-1{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .heading-3{
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .container .container-infos{
+        left: 50%;
+        top: 67.383%;
+        transform: translate(-50%);
+        width: 59.635%;
+        text-align: center;
+    }
+
+    .container .container-infos .text-infos{
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .container-bouton{
+        flex-direction: row;
+        top: 57.226%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .bouton{
+        width: 60px;
+        height: 60px;
+    }
+
+    .container .img-vehicle{
+        width: 100%;
+        height: 30.273%;
+        top: 21.484%;
+    }
+
+}
+
+@media screen and (max-height:667px) and (max-width:375px){
+    .container .title{
+        text-align: center;
+        width: 100%;
+        left: inherit;
+        top: 13.19%;
+    }
+
+    .container .title .subheading-1{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .heading-3{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .heading-6{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+    }
+
+    .container .container-infos{
+        left: 50%;
+        top: 61.32%;
+        transform: translate(-50%);
+        width: 87.20%;
+        text-align: center;
+    }
+
+    .container .container-infos .text-infos{
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .container-bouton{
+        flex-direction: row;
+        top: 51.42%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .bouton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .container .img-vehicle{
+        width: 100%;
+        height: 25.49%;
+        top: 21.484%;
+    }
+}

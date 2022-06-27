@@ -29,9 +29,9 @@ body{
 }
 
 .background img{
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     z-index: -1;
 }
 
@@ -87,6 +87,7 @@ body{
 }
 
 .select-planet li{
+    position: relative;
     font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
@@ -95,6 +96,25 @@ body{
     letter-spacing: 2.7px;
     color: #D0D6F9;
     cursor: pointer;
+}
+
+.select-planet .selection-planet{
+    position: absolute;
+    display: none;
+    height: 3px;
+    background-color: white;
+    top: 33px;
+    left: 0;
+    width: 100%;
+}
+
+.select-planet li .active{
+    display: block;
+}
+
+.select-planet li:hover .selection-planet{
+    display: block;
+    background-color: grey;
 }
 
 /*.container-infos .select-planet a{
@@ -168,4 +188,139 @@ body{
     }
 }
 
+@media screen and (max-height:1024px) and (max-width:768px) {
+    .container .title{
+        left: 5.04%;
+        top: 13.28%;
+    }
+    .container .title .subheading-1{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .container .img-moon{
+        left: 50%;
+        top: 21.484%;
+        transform: translate(-50%);
+    }
+
+    .container .img-moon img{
+        width: 300px;
+    }
+
+    .select-planet{
+        left: 50%;
+        top: 55.957%;
+        transform: translate(-50%);
+    }
+
+    .heading-2{
+        font-size: 80px;
+        line-height: 92px;
+    }
+
+    .container-infos .heading-2{
+        text-align: center;
+    }
+
+    .container .container-infos{
+        left: 50%;
+        top: 62.40%;
+        transform: translate(-50%);
+        width: 73.438%;
+    }
+
+    .container .container-infos .text-infos{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .container .container-infos .info-number{
+        justify-content: center;
+        align-items: center;
+        margin-top: 19px;
+    }
+
+}
+
+@media screen and (max-height:667px) and (max-width:375px) {
+    body{
+        height: 850px;
+    }
+
+    .container .title{
+        text-align: center;
+        width: 100%;
+        left: inherit;
+        top: 10.353%;
+    }
+    .container .title .subheading-1{
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.70px;
+    }
+
+    .container .img-moon{
+        left: 50%;
+        top: 16.353%;
+        transform: translate(-50%);
+    }
+
+    .container .img-moon img{
+        width: 170px;
+    }
+
+    .select-planet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 39.41%;
+        transform: translate(-50%);
+    }
+
+    .select-planet li{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+    }
+
+    .heading-2{
+        font-size: 80px;
+        line-height: 92px;
+    }
+
+    .container-infos .heading-2{
+        text-align: center;
+    }
+
+    .container .container-infos{
+        left: 50%;
+        top: 45.06%;
+        transform: translate(-50%);
+        width: 87.20%;
+    }
+
+    .container .container-infos .text-infos{
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .container .container-infos .info-number{
+        margin-top: 19px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .container .container-infos .info-number .distance,
+    .container .container-infos .info-number .travel-time{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 

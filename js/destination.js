@@ -1,6 +1,13 @@
 let lstBouton = document.querySelectorAll(".bouton");
 let infos = document.querySelector(".container-infos");
 let img = document.querySelector(".img-moon");
+let btn_select_planet = document.querySelectorAll(".bouton")
+let selector_planet = document.querySelectorAll(".selection-planet");
+let background = document.querySelector(".background");
+
+let icon_menu = document.querySelector(".hamburger");
+let icon_close = document.querySelector(".close");
+let menu = document.querySelector(".header");
 
 function DesacBtn(){
     for (let index = 0; index < lstBouton.length; index++) {
@@ -8,9 +15,24 @@ function DesacBtn(){
     }
 }
 
+function DesactSelectPlanet(){
+    selector_planet.forEach(selector => {
+        selector.classList.remove("active");
+    });
+}
+
+for (let index = 0; index < btn_select_planet.length; index++) {
+    const btn = btn_select_planet;
+    btn[index].addEventListener("click", () =>{
+        DesactSelectPlanet();
+        console.log("changment");
+        selector_planet[index].classList.add("active");
+    })
+}
+
 for (let index = 0; index < lstBouton.length; index++) {
     lstBouton[index].addEventListener("click", () =>{
-        console.log(index);
+        /*console.log(index);*/
         DesacBtn();
         lstBouton[index].classList.add("active")
         infos.innerHTML = 
@@ -47,3 +69,28 @@ for (let index = 0; index < lstBouton.length; index++) {
         `
     })
 }
+
+// Change l'image de fond selon la taille de la fenêtre
+window.addEventListener("resize", ()=>{
+    if(window.innerWidth <= 1000){
+        background.innerHTML = 
+        `
+        <img src="./assets/destination/background-destination-tablet.jpg" alt="background-night" class="img_background">
+        `
+    }else{
+        background.innerHTML = 
+        `
+        <img src="./assets/destination/background-destination-desktop.jpg" alt="background-night" class="img_background">
+        `
+    }
+    
+})
+
+icon_menu.addEventListener("click", () =>{
+    menu.style.display = "flex";    
+})
+
+icon_close.addEventListener("click", () =>{
+    menu.style.display = "none";    
+})
+
